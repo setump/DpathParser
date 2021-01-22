@@ -1,0 +1,8 @@
+# DpathParser
+Input-
+A Dpath that is used in Document Entity Extractor format -
+aspectName/bindingName::bindingVersion/entityName::version/relation1[attr:value]>aspectName/bindingName::bindingVersion/entityName2::version/
+Eg -
+"Utdi/amazon::1.0/ShippingRequest", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>Core/amazon::1.0/ContainerRequest/", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>SourceAddress", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>DestinationAddress", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ContainerRequest-Container", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ContainerRequest-Container>Core/amazon::1.0/Container/", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ExpectedEndTime", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ExpectedEndTime>Core/amazon::1.0/DateTimeWindow/", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ExpectedStartTime", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ExpectedStartTime>Core/amazon::1.0/DateTimeWindow/", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ServiceOfferings>ServiceOfferings/amazon::1.0/ServiceGroup/", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ReceiveHandOffPlanIdentifier", "Utdi/amazon::1.0/ShippingRequest/ShippingRequest-ContainerRequest>ReceiveHandOffPlanIdentifier>Plan/amazon::1.0/HandOffPlanIdentifier/"
+*Output - *
+A parsed Object that can be used to extract an entity from the document.
